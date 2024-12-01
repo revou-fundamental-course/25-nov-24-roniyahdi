@@ -1,1 +1,61 @@
 /* ini file css */
+.main-header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form {
+    background-color: antiquewhite;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.main-section {
+    width: 40%;
+}
+
+footer {
+    text-align: center;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type=number], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .form-button-container {
+    margin-top: 32px;
+  }
+
+  .bg-cadet-blue {
+    background-color: cadetblue;
+  }
+
+  .color-antique-white {
+    color: antiquewhite;
+  }
+
+  .bg-alice-blue {
+    background-color: aliceblue;
+  }
