@@ -1,66 +1,39 @@
-// ini file javascript
-// function peringatan(){
-    // let namaDepan = document.getElementById("nama-depan").value
-    // let namaBelakang = document.getElementById("nama-belakang").value
-    // console.log(namaDepan + " " + namaBelakang);
-    // bisa juga pakai console.log(`${namaDepan} ${namaBelakang}`)
-    // let hasil = parseInt(namaDepan) + parseInt(namaBelakang);
-    // console.log(hasil);
-    // document.write('Hasilnya adalah ' + hasil)
-// }
-
-
-// ini kalkulator
-// var calcDisplay = "";
-
-// function btnClick(e) {
-    // if (e == "1" || e == "2" || e == "3" || e == "4" ||
-        // e == "5" || e == "6" || e == "7" || e == "8" ||
-        // e == "9" || e == "/" || e == "*") {
-    // if (e == "AC") {
-        // calcDisplay = ""
-    // } else {
-    // calcDisplay = calcDisplay + e;
-    // console.log(calcDisplay);
-    // }
-    // document.getElementById("display").value = calcDisplay;
-// } else {
-    // console.log("Input harus berupa angka dan simbol");
-// }
-// }
-// 
-// var displayValue = document.getElementById("display").value;
-// console.log(displayValue);
-// document.getElementById("display").addEventListener('input', function
-// displayChange() {
-    // console.log(this.value)
-    // let e = this.value
-    // let chars = /^[0-9]+$/
-// 
-    // if (chars.test(e)) {
-        // console.log("digits")
-        // } else {
-            // console.log("not digits");
-        // }
-// })
-// 
 function validateForm() {
-    let inputBeratBadan = document.getElementById('berat-badan-input').value;
-    let inputUsia = document.getElementById('usia-input').value;
-    let inputTinggiBadan = document.getElementById('tinggi-badan-input').value;
-    
-    console.log('BB : ' + inputBeratBadan);
-    console.log('Usia : ' + inputUsia);
-    console.log('Tinggi : ' + inputTinggiBadan);
+    let inputTinggi = document.getElementById("tinggi-badan-input");
+    let inputBerat = document.getElementById("berat-badan-input");
+    let inputUsia =  document.getElementById("usia-input");
+    let ket = document.getElementById("keterangan");
+    let hasilBmi = document.getElementById("result-calculation");
+    let infoResult = document.getElementById("info-result");
 
-    if (inputBeratBadan != '' && inputUsia != '' && inputTinggiBadan != ''){
-        let calculate = parseInt(inputBeratBadan) + parseInt(inputTinggiBadan);
-        updateResult(calculate);
-    } else {
-        alert('Inputan Anda Kosong! Mohon Cek Kembali');
+    let tinggi = parseFloat(inputTinggi.value);
+    let berat = parseFloat(inputBerat.value);
+    let usia = parseFloat(inputUsia.value);
+  
+    if (isNaN(tinggi) || isNaN(berat) || isNaN(usia)) {
+      alert('Data yang anda masukkan ada yang keliru!');
+      return;
     }
-}
+  
+    let bmi = berat / ((tinggi / 100) ** 2);
+    let kategori = "";
+  
+    if (bmi < 18.5) {
+        ktrgan = "Kurang Berat Badan";
+        kategori = "Berat badan anda kurang.";
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        ktrgan = "Berat Badan Ideal";
+        kategori = "Anda memiliki berat badan normal.";
+    } else if (bmi >= 25 && bmi <= 29.9) {
+        ktrgan = "Berat Badan Lebih";
+        kategori = "Anda memiliki berat badan berlebih.";
+    } else {
+        ktrgan = "Obesitas";
+        kategori = "Anda mengalami obesitas";
+    }
+  
+    ket.innerHTML = ktrgan;
+    hasilBmi.innerHTML = bmi.toFixed(2);
+    infoResult.innerHTML = kategori;
 
-function updateResult(value) {
-    document.getElementById('result-calculation').innerHTML = value;
-}
+  }

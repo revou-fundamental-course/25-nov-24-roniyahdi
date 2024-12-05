@@ -19,11 +19,23 @@
          <section class="main-section">
             <!-- Main Article -->
         <article>
-            <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
+            <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
         </article>
 
         <!-- Main Form -->
         <form>
+            <div class="form-item">
+                <label>
+                    <input type="radio" name="gender" value="pria">
+                    Pria
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="gender" value="wanita">
+                    Wanita
+                </label>
+            </div>
+            
             <div class="form-item">
                 <label for="berat-badan-input">
                     Berat Badan (kg)
@@ -47,7 +59,7 @@
 
             <div class="form-button-container">
                 <button type="button" class="bg-cadet-blue color-antique-white" onClick="validateForm()">Hitung BMI</button>
-                <button class="bg-alice-blue ">Reset</button>
+                <button class="bg-alice-blue" type="reset">Reset</button>
             </div>
         </form>
 
@@ -57,7 +69,10 @@
                 <h3>Keunggulan Fitur</h3>
             </header>
 
-            <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
+            <p>1. Menghitung berat Badan
+                <br>2. Menentukan kategori berat badan ideal atau tidak
+                <br>3. Mempersiapkan program penurunan berat badan
+            </p>
         </article>
          </section>
 
@@ -68,16 +83,16 @@
                     <h2>Hasil</h2>
                 </header>
 
-                <p>Berat Badan Lebih</p>
+                <h3 id="keterangan">Berat Badan Anda</h3>
 
-                <div id="result-calculation">0</div>
+                <div id="result-calculation">Hasil BMI</div>
 
-                <p id="info-result">Anda memiliki berat badan ??</p>
+                <p id="info-result">Keterangan Berat Badan</p>
             </div>
 
             <!-- third article -->
             <article>
-
+                BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang, Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
             </article>
           </section>
 
