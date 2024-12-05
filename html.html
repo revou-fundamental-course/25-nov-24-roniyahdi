@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <input id="nama-depan" name="nama-depan" placeholder="Nama depan">
+    <br>
+    <input id="nama-belakang" name="nama-belakang" placeholder="Nama belakang">
+    <br>
+    <button onClick="peringatan()">Ini adalah tombol</button>
+
+    <script>
+    </script>
+</body>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: red;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input {
+            padding: 5px;
+        }
+
+        .btn {
+            padding: 5px;
+            min-width: 30px;
+        }
+
+        .btn-ac {
+            padding: 5px;
+            min-width: 60px;
+        }
+    </style>
+
+    <script>
+
+
+    </script>
+</head>
+<body>
+    <h3>Calculator</h3>
+    <div class="container">
+        <div class="container-row">
+            <input id="display" name="display" class="input" type="number">
+        </div>
+        <div class="container-row">
+            <button class="btn-ac" value="AC" onclick="btnClick(this.innerText)">AC</button>
+            <button class="btn" value="C" onclick="btnClick(this.innerText)">C</button>
+            <button class="btn" value="*" onclick="btnClick(this.innerText)">*</button>
+        </div>
+        <div class="container-row">
+            <button class="btn" value="7" onclick="btnClick(this.innerText)">7</button>
+            <button class="btn" value="8" onclick="btnClick(this.innerText)">8</button>
+            <button class="btn" value="9" onclick="btnClick(this.innerText)">9</button>
+            <button class="btn" value="/" onclick="btnClick(this.innerText)">/</button>
+        </div>
+        <div class="container-row">
+            <button class="btn" value="4" onclick="btnClick(this.innerText)">4</button>
+            <button class="btn" value="5" onclick="btnClick(this.innerText)">5</button>
+            <button class="btn" value="6" onclick="btnClick(this.innerText)">6</button>
+            <button class="btn" value="+" onclick="btnClick(this.innerText)">+</button>
+        </div>
+        <div class="container-row">
+            <button class="btn" value="1" onclick="btnClick(this.innerText)">1</button>
+            <button class="btn" value="2" onclick="btnClick(this.innerText)">2</button>
+            <button class="btn" value="3" onclick="btnClick(this.innerText)">3</button>
+            <button class="btn" value="-" onclick="btnClick(this.innerText)">-</button>
+        </div>
+        <div class="container-row">
+            <button class="btn" value="+-" onclick="btnClick(this.innerText)">+-</button>
+            <button class="btn" value="0" onclick="btnClick(this.innerText)">0</button>
+            <button class="btn" value="." onclick="btnClick(this.innerText)">.</button>
+            <button class="btn" value="=" onclick="btnClick(this.innerText)">=</button>
+        </div>
+        <script src="./js/script.js"></script>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\style.css">
+   
 </head>
 <body>
     <!-- Judul Website -->
@@ -27,26 +28,26 @@
                 <label for="berat-badan-input">
                     Berat Badan (kg)
                 </label>
-                <input type="number" id="berat-badan-input" />
+                <input type="number" id="berat-badan-input" required />
             </div>
 
             <div class="form-item">
                 <label for="usia-input">
                     Usia (tahun)
                 </label>
-                <input type="number" id="usia-input" />
+                <input type="number" id="usia-input" required />
             </div>
 
             <div class="form-item">
                 <label for="tinggi-badan-input">
                     Tinggi Badan (cm)
                 </label>
-                <input type="number" id="tinggi-badan-input" />
+                <input type="number" id="tinggi-badan-input" required />
             </div>
 
             <div class="form-button-container">
-                <button class="bg-cadet-blue color-antique-white">Hitung BMI</button>
-                <button class="bg-alice-blue">Reset</button>
+                <button type="button" class="bg-cadet-blue color-antique-white" onClick="validateForm()">Hitung BMI</button>
+                <button class="bg-alice-blue ">Reset</button>
             </div>
         </form>
 
@@ -80,12 +81,13 @@
             </article>
           </section>
 
-        
     </main>
 
     <!-- Footer Website -->
     <footer>
         <p>Made by Roni@2024</p>
     </footer>
+
+    <script src="js\script.js"></script>
 </body>
 </html>

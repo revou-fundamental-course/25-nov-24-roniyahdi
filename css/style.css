@@ -59,3 +59,14 @@ input[type=number], select {
   .bg-alice-blue {
     background-color: aliceblue;
   }
+
+  /* responsive */
+  @media only screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+  }
+
+  .main-section {
+    width: 100%;
+  }
+}
