@@ -24,7 +24,11 @@
 
         <!-- Main Form -->
         <form>
-            <div class="form-item">
+            <div>
+                <label for="jenis-kelamin-input">
+                    Jenis Kelamin :
+                </label>
+                <br>
                 <label>
                     <input type="radio" name="gender" value="pria">
                     Pria
@@ -36,30 +40,32 @@
                 </label>
             </div>
             
+            <br>
             <div class="form-item">
                 <label for="berat-badan-input">
                     Berat Badan (kg)
                 </label>
+                <br>
                 <input type="number" id="berat-badan-input" required />
             </div>
 
             <div class="form-item">
                 <label for="usia-input">
                     Usia (tahun)
-                </label>
+                </label><br>
                 <input type="number" id="usia-input" required />
             </div>
 
             <div class="form-item">
                 <label for="tinggi-badan-input">
                     Tinggi Badan (cm)
-                </label>
+                </label><br>
                 <input type="number" id="tinggi-badan-input" required />
-            </div>
+            </div><br>
 
             <div class="form-button-container">
-                <button type="button" class="bg-cadet-blue color-antique-white" onClick="validateForm()">Hitung BMI</button>
-                <button class="bg-alice-blue" type="reset">Reset</button>
+                <button id="hitung-bmi" type="button"onClick="validateForm()">Hitung BMI</button>
+                <button id="reset" class="bg-alice-blue" type="reset">Reset</button>
             </div>
         </form>
 
@@ -78,7 +84,7 @@
 
          <!-- Section Hasil Kalkulasi -->
           <section class="main-section">
-            <div>
+            <div id="kesimpulan">
                 <header>
                     <h2>Hasil</h2>
                 </header>
@@ -88,7 +94,7 @@
                 <div id="result-calculation">Hasil BMI</div>
 
                 <p id="info-result">Keterangan Berat Badan</p>
-            </div>
+            </div><br>
 
             <!-- third article -->
             <article>
@@ -100,7 +106,7 @@
 
     <!-- Footer Website -->
     <footer>
-        <p>Made by Roni@2024</p>
+        <p>Made by RoniYahdi@2024</p>
     </footer>
 
     <script src="js\script.js"></script>

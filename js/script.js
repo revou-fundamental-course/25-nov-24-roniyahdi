@@ -33,7 +33,7 @@ function validateForm() {
     }
   
     ket.innerHTML = ktrgan;
-    hasilBmi.innerHTML = bmi.toFixed(2);
+    hasilBmi.innerHTML = "BMI-mu " + bmi.toFixed(2);
     infoResult.innerHTML = kategori;
 
   }
